@@ -12,3 +12,12 @@ const playerCards = [
     def: 2
 }
 ];
+
+const enemyCards = [
+{
+    name: "ゴブリン",
+    hp: 30,
+    atk: 5,
+    def: 1
+}
+];
