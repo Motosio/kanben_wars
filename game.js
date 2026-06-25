@@ -127,22 +127,6 @@ function render() {
         );
     });
 
-    if (enemyDeck.length === 0) {
-
-        if (stage >= 12) {
-
-            alert("ゲームクリア！");
-
-            return;
-        }
-
-        stage++;
-
-        createStage(stage);
-
-        render();
-    }
-
     if (playerDeck.length === 0) {
 
         alert("ゲームオーバー");
@@ -166,11 +150,6 @@ function addLog(text){
 
 }
 
+createStage(stage);
 
-if (enemyDeck.length === 0) {
-    alert("ステージクリア！");
-}
-
-if (playerDeck.length === 0) {
-    alert("ゲームオーバー");
-}
+render();
