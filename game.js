@@ -15,6 +15,11 @@ document.getElementById(
     "turnButton"
 );
 
+const stageText =
+document.getElementById(
+    "stageText"
+);
+
 turnButton.onclick =
 battleTurn;
 
@@ -97,6 +102,9 @@ function render() {
     enemyArea.innerHTML = "";
     playerArea.innerHTML = "";
 
+    stageText.textContent =
+    `Stage ${stage}`;
+    
     enemyDeck.forEach(
         enemy => {
 
