@@ -1,3 +1,46 @@
+function getElementMultiplier(
+    attackerElement,
+    targetElement
+){
+
+    if(
+        attackerElement === "fire" &&
+        targetElement === "wood"
+    ){
+        return 1.5;
+    }
+
+    if(
+        attackerElement === "wood" &&
+        targetElement === "water"
+    ){
+        return 1.5;
+    }
+
+    if(
+        attackerElement === "water" &&
+        targetElement === "fire"
+    ){
+        return 1.5;
+    }
+
+    if(
+        attackerElement === "light" &&
+        targetElement === "dark"
+    ){
+        return 1.5;
+    }
+
+    if(
+        attackerElement === "dark" &&
+        targetElement === "light"
+    ){
+        return 1.5;
+    }
+
+    return 1;
+}
+
 function attack(attacker, target) {
 
     let damage =
