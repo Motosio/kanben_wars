@@ -145,23 +145,6 @@ body {
     box-sizing: border-box;
 }
 
-.name {
-
-    font-size: 18px;
-
-    font-weight: bold;
-
-    text-align: center;
-
-    background: rgba(255,255,255,0.1);
-
-    padding: 4px;
-
-    border-radius: 4px;
-
-    margin-bottom: 5px;
-}
-
 .rarity4 {
 
     box-shadow:
