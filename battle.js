@@ -46,5 +46,28 @@ function battleTurn() {
 
     removeDead();
 
+    if (enemyDeck.length === 0) {
+
+        if (stage >= 12) {
+
+            alert("ゲームクリア！");
+            return;
+        }
+
+        stage++;
+
+        createStage(stage);
+
+        render();
+
+        return;
+    }
+
+    if (playerDeck.length === 0) {
+
+        alert("ゲームオーバー");
+        return;
+    }
+
     render();
 }
