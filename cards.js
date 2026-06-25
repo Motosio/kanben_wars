@@ -3,7 +3,7 @@ const playerDeck = [
 {
     name: "騎士",
 
-    image: ""
+    image: "",
 
     hp: 50,
     maxHp: 50,
@@ -20,7 +20,7 @@ const playerDeck = [
 {
     name: "スライム",
 
-    image: ""
+    image: "",
 
     hp: 35,
     maxHp: 35,
