@@ -1,27 +1,47 @@
-const enemyDeck = [
+let enemyDeck = [];
 
-{
-    name: "勘弁ネズミ",
+function createStage(stage) {
 
-    hp: 20,
-    maxHp: 20,
+    enemyDeck = [];
 
-    atk: 4,
-    def: 1,
+    if (stage === 1) {
 
-    element: "wood"
-},
+        enemyDeck.push({
+            name: "勘弁ネズミ",
+            hp: 20,
+            maxHp: 20,
+            atk: 4,
+            def: 1
+        });
 
-{
-    name: "勘弁コウモリ",
+        enemyDeck.push({
+            name: "勘弁ネズミ",
+            hp: 20,
+            maxHp: 20,
+            atk: 4,
+            def: 1
+        });
 
-    hp: 15,
-    maxHp: 15,
+    }
 
-    atk: 5,
-    def: 0,
+    if (stage === 2) {
 
-    element: "dark"
+        enemyDeck.push({
+            name: "勘弁コウモリ",
+            hp: 30,
+            maxHp: 30,
+            atk: 6,
+            def: 1
+        });
+
+        enemyDeck.push({
+            name: "勘弁コウモリ",
+            hp: 30,
+            maxHp: 30,
+            atk: 6,
+            def: 1
+        });
+
+    }
+
 }
-
-];
