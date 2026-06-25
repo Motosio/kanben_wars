@@ -129,16 +129,28 @@ function render() {
 
     if (enemyDeck.length === 0) {
 
-    stage++;
+        if (stage >= 12) {
 
-    createStage(stage);
+            alert("ゲームクリア！");
 
-    render();
+            return;
+        }
+
+        stage++;
+
+        createStage(stage);
+
+        render();
+    }
+
+    if (playerDeck.length === 0) {
+
+        alert("ゲームオーバー");
+
+        return;
+    }
 }
-}
 
-createStage(stage);
-render();
 
 if (enemyDeck.length === 0) {
     alert("ステージクリア！");
