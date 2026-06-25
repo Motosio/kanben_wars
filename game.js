@@ -91,10 +91,31 @@ function createCard(
             : "player"
         }`;
 
-const borderColor =
-    unit.rarity === 5
-    ? "gold"
-    : "#4da6ff";
+    if (!isEnemy) {
+
+        card.classList.add(
+            unit.rarity === 5
+            ? "rarity5"
+            : "rarity4"
+        );
+
+    }
+
+let borderColor;
+
+if (isEnemy) {
+
+    borderColor = "red";
+
+}
+else {
+
+    borderColor =
+        unit.rarity === 5
+        ? "gold"
+        : "#4da6ff";
+
+}
 
 const elementColor =
     elementColors[
@@ -140,6 +161,18 @@ card.innerHTML = `
 
     <div class="name">
         ${unit.name}
+    </div>
+
+    <div class="hp-bar">
+
+        <div
+            class="hp-fill"
+            style="
+                width:
+                ${(unit.hp / unit.maxHp) * 100}%;
+            "
+        ></div>
+
     </div>
 
     <div>
