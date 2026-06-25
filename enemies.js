@@ -9,7 +9,8 @@ const enemyDatabase = [
     atk: 4,
     def: 1,
     statuses: [],
-    tier: 1
+    tier: 1,
+    element: "wood"
 },
 
 {
@@ -19,7 +20,8 @@ const enemyDatabase = [
     atk: 5,
     def: 1,
     statuses: [],
-    tier: 1
+    tier: 1,
+    element: "dark"
 },
 
 {
@@ -29,7 +31,8 @@ const enemyDatabase = [
     atk: 6,
     def: 2,
     statuses: [],
-    tier: 1
+    tier: 1,
+    element: "water"
 },
 
 {
@@ -39,7 +42,8 @@ const enemyDatabase = [
     atk: 8,
     def: 3,
     statuses: [],
-    tier: 2
+    tier: 2,
+    element: "wood"
 },
 
 {
@@ -49,7 +53,8 @@ const enemyDatabase = [
     atk: 10,
     def: 5,
     statuses: [],
-    tier: 2
+    tier: 2,
+    element: "light"
 },
 
 {
@@ -59,7 +64,8 @@ const enemyDatabase = [
     atk: 12,
     def: 2,
     statuses: [],
-    tier: 3
+    tier: 3,
+    element: "dark"
 },
 
 {
@@ -69,7 +75,8 @@ const enemyDatabase = [
     atk: 15,
     def: 4,
     statuses: [],
-    tier: 3
+    tier: 3,
+    element: "fire"
 }
 
 ];
@@ -114,7 +121,11 @@ function createStage(stage){
             maxHp: 150,
 
             atk: 12,
-            def: 4
+            def: 4,
+
+            statuses: [],
+
+            element: "light"
 
         });
 
@@ -133,8 +144,12 @@ function createStage(stage){
             maxHp: 220,
 
             atk: 15,
-            def: 5
+            def: 5,
 
+            statuses: [],
+
+            element: "dark"
+            
         });
 
         return;
@@ -152,7 +167,11 @@ function createStage(stage){
             maxHp: 350,
 
             atk: 20,
-            def: 6
+            def: 6,
+
+            statuses: [],
+
+            element: "dark"
 
         });
 
