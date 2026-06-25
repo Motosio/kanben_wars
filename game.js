@@ -126,6 +126,15 @@ function render() {
             )
         );
     });
+
+    if (enemyDeck.length === 0) {
+
+    stage++;
+
+    createStage(stage);
+
+    render();
+}
 }
 
 createStage(stage);
