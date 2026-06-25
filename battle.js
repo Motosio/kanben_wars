@@ -62,6 +62,13 @@ function battleTurn() {
 
         stage++;
 
+        playerDeck.forEach(player => {
+
+            player.hp =
+            player.maxHp;
+
+        });
+
         createStage(stage);
 
         render();
