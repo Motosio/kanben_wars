@@ -8,6 +8,7 @@ const enemyDatabase = [
     maxHp: 20,
     atk: 4,
     def: 1,
+    statuses: [],
     tier: 1
 },
 
@@ -17,6 +18,7 @@ const enemyDatabase = [
     maxHp: 25,
     atk: 5,
     def: 1,
+    statuses: [],
     tier: 1
 },
 
@@ -26,6 +28,7 @@ const enemyDatabase = [
     maxHp: 35,
     atk: 6,
     def: 2,
+    statuses: [],
     tier: 1
 },
 
@@ -35,6 +38,7 @@ const enemyDatabase = [
     maxHp: 50,
     atk: 8,
     def: 3,
+    statuses: [],
     tier: 2
 },
 
@@ -44,6 +48,7 @@ const enemyDatabase = [
     maxHp: 70,
     atk: 10,
     def: 5,
+    statuses: [],
     tier: 2
 },
 
@@ -53,6 +58,7 @@ const enemyDatabase = [
     maxHp: 60,
     atk: 12,
     def: 2,
+    statuses: [],
     tier: 3
 },
 
@@ -62,6 +68,7 @@ const enemyDatabase = [
     maxHp: 90,
     atk: 15,
     def: 4,
+    statuses: [],
     tier: 3
 }
 
