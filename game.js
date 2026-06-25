@@ -17,3 +17,11 @@ playerCards.forEach(card => {
 });
 
 button.onclick = battleTurn;
+
+function battleTurn(){
+
+    enemyCards[0].hp -=
+    playerCards[0].atk;
+
+    render();
+}
