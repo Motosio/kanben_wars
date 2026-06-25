@@ -128,6 +128,7 @@ function render() {
     });
 }
 
+createStage(stage);
 render();
 
 if (enemyDeck.length === 0) {
