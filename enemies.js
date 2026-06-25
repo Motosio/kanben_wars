@@ -44,4 +44,16 @@ function createStage(stage) {
 
     }
 
+    if (stage === 3) {
+
+    enemyDeck.push({
+        name: "勘弁スライム",
+        hp: 50,
+        maxHp: 50,
+        atk: 7,
+        def: 3
+    });
+
+}
+
 }
