@@ -52,6 +52,15 @@ function attack(attacker, target) {
         1
     );
 
+    damage *=
+    getElementMultiplier(
+        attacker.element,
+        target.element
+    );
+    
+    damage =
+    Math.floor(damage)
+    
     target.hp -= damage;
 
     addLog(
