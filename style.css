@@ -1,1 +1,41 @@
+body {
+    background: #1a1a1a;
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+}
 
+#enemy-area,
+#player-area {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+
+    margin: 20px;
+}
+
+.card {
+    width: 150px;
+
+    background: #2a2a2a;
+
+    border: 2px solid white;
+
+    border-radius: 10px;
+
+    padding: 10px;
+}
+
+.enemy {
+    border-color: red;
+}
+
+.player {
+    border-color: cyan;
+}
+
+button {
+    font-size: 20px;
+    padding: 10px 20px;
+}
