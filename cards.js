@@ -9,6 +9,8 @@ const playerDeck = [
     atk: 7,
     def: 5,
 
+    statuses: [],
+
     rarity: 4,
     element: "light"
 },
@@ -21,6 +23,8 @@ const playerDeck = [
 
     atk: 6,
     def: 2,
+
+    statuses: [],
 
     rarity: 4,
     element: "water"
