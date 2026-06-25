@@ -151,6 +151,21 @@ function render() {
     }
 }
 
+const battleLog =
+document.getElementById(
+    "battleLog"
+);
+
+function addLog(text){
+
+    battleLog.innerHTML +=
+        text + "<br>";
+
+    battleLog.scrollTop =
+        battleLog.scrollHeight;
+
+}
+
 
 if (enemyDeck.length === 0) {
     alert("ステージクリア！");
