@@ -119,3 +119,11 @@ function render() {
 }
 
 render();
+
+if (enemyDeck.length === 0) {
+    alert("ステージクリア！");
+}
+
+if (playerDeck.length === 0) {
+    alert("ゲームオーバー");
+}
