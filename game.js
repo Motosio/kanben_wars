@@ -1,3 +1,5 @@
+let stage = 1;
+
 const enemyArea =
 document.getElementById(
     "enemy-area"
