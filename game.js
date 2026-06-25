@@ -15,3 +15,5 @@ playerCards.forEach(card => {
 
     area.appendChild(div);
 });
+
+button.onclick = battleTurn;
