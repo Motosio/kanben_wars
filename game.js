@@ -23,6 +23,20 @@ document.getElementById(
 turnButton.onclick =
 battleTurn;
 
+const elementColors = {
+
+    fire: "#ff5555",
+
+    water: "#55aaff",
+
+    wood: "#55cc55",
+
+    light: "#ffee88",
+
+    dark: "#aa55ff"
+
+};
+
 function removeDead() {
 
     for (
