@@ -91,22 +91,76 @@ function createCard(
             : "player"
         }`;
 
-    card.innerHTML = `
-        <h3>${unit.name}</h3>
+const borderColor =
+    unit.rarity === 5
+    ? "gold"
+    : "#4da6ff";
 
+const elementColor =
+    elementColors[
+        unit.element
+    ] || "white";
+
+card.style.borderColor =
+    borderColor;
+
+card.innerHTML = `
+
+<div class="card-top">
+
+    <div class="rarity">
+        ${
+            unit.rarity === 5
+            ? "★★★★★"
+            : "★★★★"
+        }
+    </div>
+
+    <div
+        class="element"
+        style="
+            background:
+            ${elementColor}
+        "
+    ></div>
+
+</div>
+
+<div class="portrait">
+
+    ${
+        unit.image
+        ? `<img src="${unit.image}">`
+        : ""
+    }
+
+</div>
+
+<div class="card-bottom">
+
+    <div class="name">
+        ${unit.name}
+    </div>
+
+    <div>
         HP:
         ${unit.hp}
         /
         ${unit.maxHp}
-        <br>
+    </div>
 
+    <div>
         ATK:
         ${unit.atk}
-        <br>
+    </div>
 
+    <div>
         DEF:
         ${unit.def}
-    `;
+    </div>
+
+</div>
+`;
 
     return card;
 }
