@@ -15,6 +15,26 @@ body {
     margin: 20px;
 }
 
+#battleLog {
+
+    width: 800px;
+
+    min-height: 120px;
+
+    margin: 20px auto;
+
+    padding: 10px;
+
+    background: #111;
+
+    border: 1px solid white;
+
+    text-align: left;
+
+    overflow-y: auto;
+
+}
+
 .card {
     width: 150px;
 
