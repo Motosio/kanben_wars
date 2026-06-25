@@ -10,6 +10,12 @@ function attack(attacker, target) {
     );
 
     target.hp -= damage;
+
+    addLog(
+        `${attacker.name}の攻撃！
+        ${target.name}に
+        ${damage}ダメージ！`
+    );
 }
 
 function battleTurn() {
