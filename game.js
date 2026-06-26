@@ -20,8 +20,7 @@ document.getElementById(
     "stageText"
 );
 
-turnButton.onclick =
-battleTurn;
+turnButton.onclick = () => battleTurn();
 
 function removeDead() {
 
