@@ -85,45 +85,83 @@ function attack(attacker, target) {
     );
 }
 
-function battleTurn() {
+async function battleTurn() {
+
+    const actions = [];
+
+    async function battleTurn() {
+
+        if (battleBusy)
+            return;
+
+        battleBusy = true;
 
     playerDeck.forEach(player => {
 
-        const target =
-            enemyDeck.find(
-                enemy => enemy.hp > 0
+        if(player.hp <= 0)
+            return;
+
+        actions.push(() => {
+
+            const target =
+                enemyDeck.find(
+                    enemy => enemy.hp > 0
+                );
+
+            if (!target)
+                return;
+
+            attack(
+                player,
+                target
             );
 
-        if (!target) return;
-
-        attack(
-            player,
-            target
-        );
     });
+
+});
 
     enemyDeck.forEach(enemy => {
 
-        const target =
-            playerDeck.find(
-                player => player.hp > 0
+        if(enemy.hp <= 0)
+            return;
+
+        actions.push(() => {
+
+            const target =
+                playerDeck.find(
+                    player => player.hp > 0
+                );
+
+            if (!target)
+                return;
+
+            attack(
+                enemy,
+                target
             );
 
-        if (!target) return;
+        });
 
-        attack(
-            enemy,
-            target
-        );
     });
 
-    removeDead();
+    for(const action of actions){
+
+        action();
+
+        removeDead();
+
+        render();
+
+        await wait(1000);
+
+    }
 
     if (enemyDeck.length === 0) {
 
         if (stage >= 12) {
 
             alert("ゲームクリア！");
+            battleBusy = false;
             return;
         }
 
@@ -150,4 +188,6 @@ function battleTurn() {
     }
 
     render();
+
+    battleBusy = false;
 }
