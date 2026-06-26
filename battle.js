@@ -1,3 +1,18 @@
+let battleBusy = false;
+
+function wait(ms){
+
+    return new Promise(resolve => {
+
+        setTimeout(
+            resolve,
+            ms
+        );
+
+    });
+
+}
+
 function getElementMultiplier(
     attackerElement,
     targetElement
