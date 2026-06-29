@@ -4,10 +4,10 @@ const enemyDatabase = [
 
 {
     name: "勘弁ネズミ",
-    hp: 20,
-    maxHp: 20,
-    atk: 4,
-    def: 1,
+    hp: 1000,
+    maxHp: 1000,
+    atk: 400,
+    def: 100,
     statuses: [],
     tier: 1,
     element: "wood"
@@ -15,10 +15,10 @@ const enemyDatabase = [
 
 {
     name: "勘弁コウモリ",
-    hp: 25,
-    maxHp: 25,
-    atk: 5,
-    def: 1,
+    hp: 2500,
+    maxHp: 2500,
+    atk: 500,
+    def: 100,
     statuses: [],
     tier: 1,
     element: "dark"
@@ -26,10 +26,10 @@ const enemyDatabase = [
 
 {
     name: "勘弁スライム",
-    hp: 35,
-    maxHp: 35,
-    atk: 6,
-    def: 2,
+    hp: 3500,
+    maxHp: 3500,
+    atk: 600,
+    def: 200,
     statuses: [],
     tier: 1,
     element: "water"
