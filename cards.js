@@ -3,7 +3,16 @@ const playerDeck = [
 {
     name: "イグノア・フラクタル",
 
-    ...
+    rarity: 4,
+
+    element: "light",
+
+    hp: 100,
+    atk: 2000,
+    def: 100,
+
+    critRate: 50,
+    critDamage: 100,
 
     gauge: 0,
     maxGauge: 3,
@@ -13,7 +22,7 @@ const playerDeck = [
 
     statuses: []
 }
-
+    
 {
     name: "騎士",
 
