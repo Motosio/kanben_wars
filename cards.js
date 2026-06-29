@@ -21,7 +21,7 @@ const playerDeck = [
     skill: "startupCalculation",
 
     statuses: []
-}
+},
     
 {
     name: "騎士",
@@ -33,6 +33,11 @@ const playerDeck = [
 
     atk: 7,
     def: 5,
+
+    gauge: 0,
+    maxGauge: 0,
+    gaugeColor: "#ffffff",
+    skill: null,
 
     statuses: [],
 
@@ -50,6 +55,11 @@ const playerDeck = [
 
     atk: 6,
     def: 2,
+
+    gauge: 0,
+    maxGauge: 0,
+    gaugeColor: "#ffffff",
+    skill: null,
 
     statuses: [],
 
