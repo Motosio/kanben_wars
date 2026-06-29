@@ -1,6 +1,20 @@
 const playerDeck = [
 
 {
+    name: "イグノア・フラクタル",
+
+    ...
+
+    gauge: 0,
+    maxGauge: 3,
+    gaugeColor: "#63F4FF",
+
+    skill: "startupCalculation",
+
+    statuses: []
+}
+
+{
     name: "騎士",
 
     image: "",
