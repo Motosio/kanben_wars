@@ -7,9 +7,10 @@ const playerDeck = [
 
     element: "light",
 
-    hp: 100,
+    hp: 1000,
+    maxHp: 1000,
     atk: 2000,
-    def: 100,
+    def: 1000,
 
     critRate: 50,
     critDamage: 100,
@@ -28,11 +29,11 @@ const playerDeck = [
 
     image: "",
 
-    hp: 50,
-    maxHp: 50,
+    hp: 500,
+    maxHp: 500,
 
-    atk: 7,
-    def: 5,
+    atk: 500,
+    def: 500,
 
     gauge: 0,
     maxGauge: 0,
@@ -50,11 +51,11 @@ const playerDeck = [
 
     image: "",
 
-    hp: 35,
-    maxHp: 35,
+    hp: 500,
+    maxHp: 500,
 
-    atk: 6,
-    def: 2,
+    atk: 500,
+    def: 500,
 
     gauge: 0,
     maxGauge: 0,
